@@ -1,6 +1,7 @@
 import { t } from "@lingui/macro";
 import {
   CopySimple,
+  DotsThreeVertical,
   FolderOpen,
   Lock,
   LockOpen,
@@ -14,6 +15,11 @@ import {
   ContextMenuItem,
   ContextMenuSeparator,
   ContextMenuTrigger,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  Button,
 } from "@reactive-resume/ui";
 import { cn } from "@reactive-resume/utils";
 import dayjs from "dayjs";
@@ -55,6 +61,77 @@ export const ResumeCard = ({ resume }: Props) => {
     open("delete", { id: "resume", item: resume });
   };
 
+  const dropdownMenu = (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild className="aspect-square">
+        <Button size="icon" variant="ghost">
+          <DotsThreeVertical />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent>
+        <DropdownMenuItem
+          onClick={(event) => {
+            event.stopPropagation();
+            onOpen();
+          }}
+        >
+          <FolderOpen size={14} className="mr-2" />
+          {t`Open`}
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={(event) => {
+            event.stopPropagation();
+            onUpdate();
+          }}
+        >
+          <PencilSimple size={14} className="mr-2" />
+          {t`Rename`}
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={(event) => {
+            event.stopPropagation();
+            onDuplicate();
+          }}
+        >
+          <CopySimple size={14} className="mr-2" />
+          {t`Duplicate`}
+        </DropdownMenuItem>
+        {resume.locked ? (
+          <DropdownMenuItem
+            onClick={(event) => {
+              event.stopPropagation();
+              onLockChange();
+            }}
+          >
+            <LockOpen size={14} className="mr-2" />
+            {t`Unlock`}
+          </DropdownMenuItem>
+        ) : (
+          <DropdownMenuItem
+            onClick={(event) => {
+              event.stopPropagation();
+              onLockChange();
+            }}
+          >
+            <Lock size={14} className="mr-2" />
+            {t`Lock`}
+          </DropdownMenuItem>
+        )}
+        <ContextMenuSeparator />
+        <DropdownMenuItem
+          className="text-error"
+          onClick={(event) => {
+            event.stopPropagation();
+            onDelete();
+          }}
+        >
+          <TrashSimple size={14} className="mr-2" />
+          {t`Delete`}
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+
   return (
     <ContextMenu>
       <ContextMenuTrigger>
@@ -78,42 +155,14 @@ export const ResumeCard = ({ resume }: Props) => {
               "bg-gradient-to-t from-background/80 to-transparent",
             )}
           >
-            <h4 className="line-clamp-2 font-medium">{resume.title}</h4>
+            <div className="inline-flex items-center gap-x-2">
+              <h4 className="line-clamp-2 font-medium">{resume.title}</h4>
+              {dropdownMenu}
+            </div>
             <p className="line-clamp-1 text-xs opacity-75">{t`Last updated ${lastUpdated}`}</p>
           </div>
         </BaseCard>
       </ContextMenuTrigger>
-
-      <ContextMenuContent>
-        <ContextMenuItem onClick={onOpen}>
-          <FolderOpen size={14} className="mr-2" />
-          {t`Open`}
-        </ContextMenuItem>
-        <ContextMenuItem onClick={onUpdate}>
-          <PencilSimple size={14} className="mr-2" />
-          {t`Rename`}
-        </ContextMenuItem>
-        <ContextMenuItem onClick={onDuplicate}>
-          <CopySimple size={14} className="mr-2" />
-          {t`Duplicate`}
-        </ContextMenuItem>
-        {resume.locked ? (
-          <ContextMenuItem onClick={onLockChange}>
-            <LockOpen size={14} className="mr-2" />
-            {t`Unlock`}
-          </ContextMenuItem>
-        ) : (
-          <ContextMenuItem onClick={onLockChange}>
-            <Lock size={14} className="mr-2" />
-            {t`Lock`}
-          </ContextMenuItem>
-        )}
-        <ContextMenuSeparator />
-        <ContextMenuItem className="text-error" onClick={onDelete}>
-          <TrashSimple size={14} className="mr-2" />
-          {t`Delete`}
-        </ContextMenuItem>
-      </ContextMenuContent>
     </ContextMenu>
   );
 };

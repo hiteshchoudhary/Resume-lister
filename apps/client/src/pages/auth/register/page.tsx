@@ -77,108 +77,104 @@ export const RegisterPage = () => {
         </h6>
       </div>
 
-      {flags.isSignupsDisabled && (
-        <Alert variant="error">
-          <AlertTitle>{t`Signups are currently disabled by the administrator.`}</AlertTitle>
-        </Alert>
+      {!flags.isSignupsDisabled && (
+        <div>
+          <Form {...form}>
+            <form
+              ref={formRef}
+              className="flex flex-col gap-y-4"
+              onSubmit={form.handleSubmit(onSubmit)}
+            >
+              <FormField
+                name="name"
+                control={form.control}
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>{t`Name`}</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder={t({
+                          message: "John Doe",
+                          context:
+                            "Localized version of a placeholder name. For example, Max Mustermann in German or Jan Kowalski in Polish.",
+                        })}
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                name="username"
+                control={form.control}
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>{t`Username`}</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder={t({
+                          message: "john.doe",
+                          context:
+                            "Localized version of a placeholder username. For example, max.mustermann in German or jan.kowalski in Polish.",
+                        })}
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                name="email"
+                control={form.control}
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>{t`Email`}</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder={t({
+                          message: "john.doe@example.com",
+                          context:
+                            "Localized version of a placeholder email. For example, max.mustermann@example.de in German or jan.kowalski@example.pl in Polish.",
+                        })}
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                name="password"
+                control={form.control}
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>{t`Password`}</FormLabel>
+                    <FormControl>
+                      <Input type="password" {...field} />
+                    </FormControl>
+                    <FormDescription>
+                      <Trans>
+                        Hold <code className="text-xs font-bold">Ctrl</code> to display your
+                        password temporarily.
+                      </Trans>
+                    </FormDescription>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <Button disabled={loading} className="mt-4 w-full">
+                {t`Sign up`}
+              </Button>
+            </form>
+          </Form>
+        </div>
       )}
-
-      <div className={cn(flags.isSignupsDisabled && "pointer-events-none select-none blur-sm")}>
-        <Form {...form}>
-          <form
-            ref={formRef}
-            className="flex flex-col gap-y-4"
-            onSubmit={form.handleSubmit(onSubmit)}
-          >
-            <FormField
-              name="name"
-              control={form.control}
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>{t`Name`}</FormLabel>
-                  <FormControl>
-                    <Input
-                      placeholder={t({
-                        message: "John Doe",
-                        context:
-                          "Localized version of a placeholder name. For example, Max Mustermann in German or Jan Kowalski in Polish.",
-                      })}
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              name="username"
-              control={form.control}
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>{t`Username`}</FormLabel>
-                  <FormControl>
-                    <Input
-                      placeholder={t({
-                        message: "john.doe",
-                        context:
-                          "Localized version of a placeholder username. For example, max.mustermann in German or jan.kowalski in Polish.",
-                      })}
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              name="email"
-              control={form.control}
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>{t`Email`}</FormLabel>
-                  <FormControl>
-                    <Input
-                      placeholder={t({
-                        message: "john.doe@example.com",
-                        context:
-                          "Localized version of a placeholder email. For example, max.mustermann@example.de in German or jan.kowalski@example.pl in Polish.",
-                      })}
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              name="password"
-              control={form.control}
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>{t`Password`}</FormLabel>
-                  <FormControl>
-                    <Input type="password" {...field} />
-                  </FormControl>
-                  <FormDescription>
-                    <Trans>
-                      Hold <code className="text-xs font-bold">Ctrl</code> to display your password
-                      temporarily.
-                    </Trans>
-                  </FormDescription>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <Button disabled={loading} className="mt-4 w-full">
-              {t`Sign up`}
-            </Button>
-          </form>
-        </Form>
-      </div>
     </div>
   );
 };

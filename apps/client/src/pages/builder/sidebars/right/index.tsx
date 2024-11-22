@@ -47,9 +47,9 @@ export const RightSidebar = () => {
           <Separator />
           <NotesSection />
           <Separator />
-          <InformationSection />
+          {/* <InformationSection />
           <Separator />
-          <Copyright className="text-center" />
+          <Copyright className="text-center" /> */}
         </div>
       </ScrollArea>
 
@@ -120,13 +120,13 @@ export const RightSidebar = () => {
               scrollIntoView("#notes");
             }}
           />
-          <SectionIcon
+          {/* <SectionIcon
             id="information"
             name={t`Information`}
             onClick={() => {
               scrollIntoView("#information");
             }}
-          />
+          /> */}
         </div>
 
         <ThemeSwitch size={14} />
