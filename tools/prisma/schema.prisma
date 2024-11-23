@@ -55,6 +55,7 @@ model Resume {
   slug       String
   data       Json        @default("{}")
   visibility Visibility  @default(private)
+  featured   Boolean     @default(false)
   locked     Boolean     @default(false)
   statistics Statistics?
   userId     String

@@ -18,6 +18,7 @@ import { ResumeModule } from "./resume/resume.module";
 import { StorageModule } from "./storage/storage.module";
 import { TranslationModule } from "./translation/translation.module";
 import { UserModule } from "./user/user.module";
+import { ResumeListingModule } from "./resume-listing/resume-listing.module";
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { UserModule } from "./user/user.module";
     AuthModule.register(),
     UserModule,
     ResumeModule,
+    ResumeListingModule,
     StorageModule,
     PrinterModule,
     FeatureModule,
