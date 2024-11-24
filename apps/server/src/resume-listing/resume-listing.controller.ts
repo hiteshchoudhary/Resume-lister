@@ -30,8 +30,8 @@ export class ResumeListingController {
       parseInt(page),
       parseInt(limit),
       featured,
-      skills,
-      languages,
+      skills?.trim() || undefined,
+      languages?.trim() || undefined,
     );
   }
 }

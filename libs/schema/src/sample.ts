@@ -5,6 +5,7 @@ export const sampleResume: ResumeData = {
     name: "John Doe",
     headline: "Creative and Innovative Web Developer",
     email: "john.doe@gmail.com",
+    username: "johndoe",
     phone: "(555) 123-4567",
     location: "Pleasantville, CA 94588",
     url: {

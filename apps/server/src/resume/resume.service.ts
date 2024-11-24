@@ -25,13 +25,13 @@ export class ResumeService {
   ) {}
 
   async create(userId: string, createResumeDto: CreateResumeDto) {
-    const { name, email, picture } = await this.prisma.user.findUniqueOrThrow({
+    const { name, email, picture, username } = await this.prisma.user.findUniqueOrThrow({
       where: { id: userId },
-      select: { name: true, email: true, picture: true },
+      select: { name: true, email: true, picture: true, username: true },
     });
 
     const data = deepmerge(defaultResumeData, {
-      basics: { name, email, picture: { url: picture ?? "" } },
+      basics: { name, email, picture: { url: picture ?? "" }, username },
     } satisfies DeepPartial<ResumeData>);
 
     return this.prisma.resume.create({

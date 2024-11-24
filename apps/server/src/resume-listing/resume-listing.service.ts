@@ -50,7 +50,8 @@ export class ResumeListingService {
     const rawQuery = `
       SELECT *
       FROM "Resume"
-      WHERE featured = ${featured} 
+      WHERE visibility = 'public' 
+      AND featured = ${featured} 
       ${arrayFilters.length ? `AND ${arrayFilters.join(` OR `)}` : ``}
       LIMIT ${limit}
       OFFSET ${offset};
