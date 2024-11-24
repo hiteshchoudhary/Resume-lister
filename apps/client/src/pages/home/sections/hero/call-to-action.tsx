@@ -17,7 +17,9 @@ export const HeroCTA = () => {
         <Button asChild size="lg">
           <Link to="/dashboard">{t`Go to Dashboard`}</Link>
         </Button>
-
+        <Button asChild size="lg">
+          <Link to="/resume-listing">{t`Find Talent`}</Link>
+        </Button>
         <Button size="lg" variant="link" onClick={() => logout()}>
           <SignOut className="mr-3" />
           {t`Logout`}
@@ -31,7 +33,9 @@ export const HeroCTA = () => {
       <Button asChild size="lg">
         <Link to="/auth/login">{t`Get Started`}</Link>
       </Button>
-
+      <Button asChild size="lg">
+        <Link to="/resume-listing">{t`Find Talent`}</Link>
+      </Button>
       <Button asChild size="lg" variant="link">
         <a href="https://docs.rxresu.me" target="_blank" rel="noopener noreferrer nofollow">
           <Book className="mr-3" />

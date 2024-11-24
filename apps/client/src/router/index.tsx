@@ -17,6 +17,8 @@ import { HomeLayout } from "../pages/home/layout";
 import { PrivacyPolicyPage } from "../pages/home/meta/privacy-policy/page";
 import { HomePage } from "../pages/home/page";
 import { publicLoader, PublicResumePage } from "../pages/public/page";
+import { ResumeListingLayout } from "../pages/resume-listing/layout";
+import { ResumeListingPage } from "../pages/resume-listing/page";
 import { Providers } from "../providers";
 import { AuthGuard } from "./guards/auth";
 import { GuestGuard } from "./guards/guest";
@@ -31,6 +33,10 @@ export const routes = createRoutesFromElements(
         <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
         <Route index element={<Navigate replace to="/" />} />
       </Route>
+    </Route>
+
+    <Route element={<ResumeListingLayout />}>
+      <Route path="resume-listing" element={<ResumeListingPage />} />
     </Route>
 
     <Route path="auth">

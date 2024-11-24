@@ -27,20 +27,24 @@ import { useNavigate } from "react-router-dom";
 import { useDialog } from "@/client/stores/dialog";
 
 import { BaseCard } from "./base-card";
+import { useAuthStore } from "@/client/stores/auth";
 
 type Props = {
   resume: ResumeDto;
+  isListing?: boolean;
 };
 
-export const ResumeCard = ({ resume }: Props) => {
+export const ResumeCard = ({ resume, isListing }: Props) => {
   const navigate = useNavigate();
+  const { user } = useAuthStore();
   const { open } = useDialog<ResumeDto>("resume");
   const { open: lockOpen } = useDialog<ResumeDto>("lock");
 
   const lastUpdated = dayjs().to(resume.updatedAt);
 
   const onOpen = () => {
-    navigate(`/builder/${resume.id}`);
+    if (!isListing) return navigate(`/builder/${resume.id}`);
+    navigate(`/${resume?.data?.basics?.username}/${resume.slug}`);
   };
 
   const onUpdate = () => {
@@ -62,7 +66,7 @@ export const ResumeCard = ({ resume }: Props) => {
   const dropdownMenu = (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="aspect-square">
-        <Button size="icon" variant="ghost">
+        <Button size="icon" variant="ghost" className="ml-auto">
           <DotsThreeVertical />
         </Button>
       </DropdownMenuTrigger>
@@ -133,9 +137,20 @@ export const ResumeCard = ({ resume }: Props) => {
   return (
     <ContextMenu>
       <ContextMenuTrigger>
-        <BaseCard className="space-y-0" onClick={onOpen}>
+        <BaseCard
+          className="space-y-0"
+          onClick={onOpen}
+          style={
+            isListing
+              ? {
+                  backgroundImage: `url('/templates/jpg/${resume.data.metadata.template}.jpg')`,
+                  backgroundSize: "cover",
+                }
+              : {}
+          }
+        >
           <AnimatePresence>
-            {resume.locked && (
+            {resume.locked && !isListing && (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -149,15 +164,18 @@ export const ResumeCard = ({ resume }: Props) => {
 
           <div
             className={cn(
-              "absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-12",
-              "bg-gradient-to-t from-background/80 to-transparent",
+              "absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-12 leading-none",
+              "bg-gradient-to-t from-background/100 to-transparent",
             )}
           >
             <div className="inline-flex items-center gap-x-2">
               <h4 className="line-clamp-2 font-medium">{resume.title}</h4>
-              {dropdownMenu}
+              {user?.id === resume.userId && dropdownMenu}
             </div>
             <p className="line-clamp-1 text-xs opacity-75">{t`Last updated ${lastUpdated}`}</p>
+            {isListing && (
+              <p className="line-clamp-1 text-xs opacity-75">{t`By ${resume.data?.basics.name}`}</p>
+            )}
           </div>
         </BaseCard>
       </ContextMenuTrigger>

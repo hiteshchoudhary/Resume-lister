@@ -8,9 +8,10 @@ type Props = {
   className?: string;
   onClick?: () => void;
   children?: React.ReactNode;
+  style?: React.CSSProperties;
 };
 
-export const BaseCard = ({ children, className, onClick }: Props) => (
+export const BaseCard = ({ children, className, onClick, style }: Props) => (
   <Tilt {...defaultTiltProps}>
     <Card
       className={cn(
@@ -18,6 +19,7 @@ export const BaseCard = ({ children, className, onClick }: Props) => (
         className,
       )}
       onClick={onClick}
+      style={style}
     >
       {children}
     </Card>
