@@ -46,7 +46,7 @@ services:
       PRE_REQUEST_HEALTH_CHECK: true
 
   app:
-    image: reactive-resume:latest
+    image: .
     restart: unless-stopped
     ports:
       - "3000:3000"
