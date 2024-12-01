@@ -9,6 +9,8 @@ import { ThemeSwitch } from "@/client/components/theme-switch";
 import { useAuthProviders } from "@/client/services/auth/providers";
 
 import { SocialAuth } from "./_components/social-auth";
+import { Button } from "@reactive-resume/ui";
+import { ArrowLeft } from "@phosphor-icons/react";
 
 const authRoutes = [{ path: "/auth/login" }, { path: "/auth/register" }];
 
@@ -32,7 +34,13 @@ export const AuthLayout = () => {
           </Link>
 
           <div className="right-0 space-x-2 text-right lg:absolute lg:p-12 lg:text-center">
-            <LocaleSwitch />
+            {/* <LocaleSwitch /> */}
+            <Button size="icon" variant="ghost" onClick={() => {}}>
+              <Link to={"/"}>
+                <ArrowLeft size={20} className="shrink-0" />
+              </Link>
+            </Button>
+
             <ThemeSwitch />
           </div>
         </div>
@@ -58,7 +66,7 @@ export const AuthLayout = () => {
         )}
       </div>
 
-      <div className="relative hidden lg:block lg:flex-1">
+      {/* <div className="relative hidden lg:block lg:flex-1">
         <img
           width={1920}
           height={1080}
@@ -76,7 +84,7 @@ export const AuthLayout = () => {
             {t`Photograph by Patrick Tomasso`}
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

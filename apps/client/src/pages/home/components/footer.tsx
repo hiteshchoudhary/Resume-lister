@@ -15,18 +15,18 @@ export const Footer = () => (
       <div className="flex flex-col gap-y-2">
         <Logo size={96} className="-ml-2" />
 
-        <h2 className="text-xl font-medium">{t`Reactive Resume`}</h2>
+        <h2 className="text-xl font-medium">{t`Resume Lister`}</h2>
 
         <p className="prose prose-sm prose-zinc leading-relaxed opacity-60 dark:prose-invert">
-          {t`A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.`}
+          {t`Build professional resumes in minutes. Stand out from the crowd and land your dream job.`}
         </p>
 
-        <Copyright className="mt-6" />
+        {/* <Copyright className="mt-6" /> */}
       </div>
 
       <div className="relative col-start-4 flex flex-col items-end justify-end">
         <div className="mb-14 space-y-6 text-right">
-          <a
+          {/* <a
             className="block"
             href="https://www.digitalocean.com/?utm_medium=opensource&utm_source=Reactive-Resume"
           >
@@ -42,7 +42,7 @@ export const Footer = () => (
               className="hidden dark:block"
               width="150px"
             />
-          </a>
+          </a> */}
 
           <Link
             to="/meta/privacy-policy"
@@ -51,7 +51,7 @@ export const Footer = () => (
         </div>
 
         <div className="absolute bottom-0 right-0 lg:space-x-2">
-          <LocaleSwitch />
+          {/* <LocaleSwitch /> */}
           <ThemeSwitch />
         </div>
       </div>

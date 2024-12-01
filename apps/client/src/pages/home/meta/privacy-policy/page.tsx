@@ -7,12 +7,12 @@ export const PrivacyPolicyPage = () => (
   <main className="relative isolate bg-background">
     <Helmet prioritizeSeoTags>
       <title>
-        {t`Privacy Policy`} - {t`Reactive Resume`}
+        {t`Privacy Policy`} - {t`Resume Lister`}
       </title>
 
       <meta
         name="description"
-        content="A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+        content="Build professional resumes in minutes. Stand out from the crowd and land your dream job."
       />
     </Helmet>
 
@@ -30,7 +30,7 @@ export const PrivacyPolicyPage = () => (
           <h2 className="mb-2">Introduction</h2>
           <p>
             This privacy policy outlines how we collect, use, and protect the personal information
-            you provide when using our web application. By accessing or using Reactive Resume, you
+            you provide when using our web application. By accessing or using Resume Lister, you
             agree to the collection and use of information in accordance with this policy.
           </p>
         </li>
@@ -66,7 +66,7 @@ export const PrivacyPolicyPage = () => (
         <li>
           <h2 className="mb-2">Data Security</h2>
           <p>
-            Reactive Resume is committed to ensuring the security of your data. Our application and
+            Resume Lister is committed to ensuring the security of your data. Our application and
             database are hosted on a secure server from DigitalOcean, which has both SOC 2 and SOC 3
             compliance, ensuring that your data is protected with industry-standard security
             measures.
@@ -104,7 +104,7 @@ export const PrivacyPolicyPage = () => (
           <h2 className="mb-2">Contact Us</h2>
           <p>
             If you have any questions or suggestions about our Privacy Policy, do not hesitate to
-            contact us at <code>hello[at]amruthpillai[dot]com</code>.
+            contact us at <code>team@hiteshchoudhary.com</code>.
           </p>
         </li>
       </ol>

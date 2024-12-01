@@ -69,7 +69,7 @@ export const ResumeListingPage = () => {
         <html lang={i18n.locale} />
 
         <title>
-          {t`Reactive Resume`} - {t`A free and open-source resume builder`}
+          {t`Resume Lister`} - {t`Build professional resumes in minutes.`}
         </title>
 
         <meta name="description" content="Find good talent on your fingertips." />

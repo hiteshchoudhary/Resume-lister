@@ -31,20 +31,20 @@ msgid "{value, plural, one {Column} other {Columns}}"
 msgstr "{value, plural, one {Sloupec} few {Sloupce} many {Sloupce} other {Sloupce}}"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:20
-msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
-msgstr "<0>Reactive Resume jsem vytvořil převážně sám ve svém volném čase, s velkou pomocí dalších skvělých přispěvatelů do open-source.</0><1>Pokud se vám aplikace líbí a chcete ji podpořit, aby zůstala navždy zdarma, přispějte, prosím, jakoukoli částkou, kterou si můžete dovolit.</1>"
+msgid "<0>I built Resume Lister mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
+msgstr "<0>Resume Lister jsem vytvořil převážně sám ve svém volném čase, s velkou pomocí dalších skvělých přispěvatelů do open-source.</0><1>Pokud se vám aplikace líbí a chcete ji podpořit, aby zůstala navždy zdarma, přispějte, prosím, jakoukoli částkou, kterou si můžete dovolit.</1>"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:51
 msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If you faced any issues while creating your resume, or have an idea that would help you and other users in creating your resume more easily, drop an issue on the repository or send me an email about it.</1>"
 msgstr "<0>Jsem si jistý, že aplikace není dokonalá, ale rád bych, aby byla.</0><1>Pokud jste se při tvorbě životopisu setkali s nějakými problémy nebo máte nápad, který by vám i ostatním uživatelům pomohl při snadnější tvorbě životopisu, napište o tom do úložiště nebo mi pošlete e-mail.</1>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:205
-msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
-msgstr "<0>Poznámka </0>: Používáním rozhraní API OpenAI berete na vědomí a souhlasíte s podmínkami <1>používání</1> a <2>zásadami ochrany osobních údajů</2> uvedenými společností OpenAI. Vezměte prosím na vědomí, že Reactive Resume nenese žádnou odpovědnost za nesprávné nebo neoprávněné použití služby a veškeré následky nebo závazky z toho plynoucí nese výhradně uživatel."
+msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Resume Lister bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
+msgstr "<0>Poznámka </0>: Používáním rozhraní API OpenAI berete na vědomí a souhlasíte s podmínkami <1>používání</1> a <2>zásadami ochrany osobních údajů</2> uvedenými společností OpenAI. Vezměte prosím na vědomí, že Resume Lister nenese žádnou odpovědnost za nesprávné nebo neoprávněné použití služby a veškeré následky nebo závazky z toho plynoucí nese výhradně uživatel."
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:85
-msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
-msgstr "<0>Komunita strávila spoustu času psaním dokumentace k aplikaci Reactive Resume a jsem si jistý, že vám pomůže začít s aplikací pracovat.</0><1>Je zde také spousta příkladů, které vám pomohou začít, a funkcí, o kterých možná nevíte a které by vám mohly pomoci vytvořit dokonalý životopis.</1>"
+msgid "<0>The community has spent a lot of time writing the documentation for Resume Lister, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
+msgstr "<0>Komunita strávila spoustu času psaním dokumentace k aplikaci Resume Lister a jsem si jistý, že vám pomůže začít s aplikací pracovat.</0><1>Je zde také spousta příkladů, které vám pomohou začít, a funkcí, o kterých možná nevíte a které by vám mohly pomoci vytvořit dokonalý životopis.</1>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:146
 msgid "<0>Two-factor authentication is currently disabled.</0> You can enable it by adding an authenticator app to your account."
@@ -56,12 +56,12 @@ msgstr "<0>Je povoleno dvoufaktorové ověřování.</0> Při každém přihlá�
 
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/home/sections/hero/index.tsx:40
-msgid "A free and open-source resume builder"
+msgid "Build professional resumes in minutes."
 msgstr "Bezplatný nástroj pro tvorbu životopisů s otevřeným zdrojovým kódem"
 
 #: apps/client/src/pages/home/components/footer.tsx:21
 #: apps/client/src/pages/home/sections/hero/index.tsx:45
-msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+msgid "Build professional resumes in minutes. Stand out from the crowd and land your dream job."
 msgstr "Bezplatný nástroj pro tvorbu životopisů s otevřeným zdrojovým kódem, který zjednodušuje proces vytváření, aktualizace a sdílení životopisů."
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:53
@@ -442,7 +442,7 @@ msgid "Don't see your language? <0>Help translate the app.</0>"
 msgstr "Nevidíte váš jazyk? <0>Pomozte s překladem aplikace.</0>"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:40
-msgid "Donate to Reactive Resume"
+msgid "Donate to Resume Lister"
 msgstr "Přispět na opětovné spuštění"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:56
@@ -527,12 +527,12 @@ msgid "Errors"
 msgstr "Chyby"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:78
-msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
-msgstr "I když nejste schopni přispět finančně, můžete změnit tím, že budete mít GitHubu hvězdu, šíří slovo svým přátelům nebo shazuje rychlou zprávu, aby mi dalo vědět, jak vám pomohl Reactive Resume Vaše zpětná vazba a podpora jsou vždy vítány a oceňovány!"
+msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Resume Lister has helped you. Your feedback and support are always welcome and much appreciated!"
+msgstr "I když nejste schopni přispět finančně, můžete změnit tím, že budete mít GitHubu hvězdu, šíří slovo svým přátelům nebo shazuje rychlou zprávu, aby mi dalo vědět, jak vám pomohl Resume Lister Vaše zpětná vazba a podpora jsou vždy vítány a oceňovány!"
 
 #: apps/client/src/pages/home/sections/templates/index.tsx:12
-msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
-msgstr "Prozkoumejte šablony dostupné v Reactive Resume a podívejte se na obnovení s nimi. Mohli by také sloužit jako příklady, které by pomohly řídit vytvoření vašeho dalšího životopisu."
+msgid "Explore the templates available in Resume Lister and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+msgstr "Prozkoumejte šablony dostupné v Resume Lister a podívejte se na obnovení s nimi. Mohli by také sloužit jako příklady, které by pomohly řídit vytvoření vašeho dalšího životopisu."
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:111
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:40
@@ -687,8 +687,8 @@ msgid "Host your resume publicly"
 msgstr "Hostujte váš obnovený účet veřejně"
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:70
-msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
-msgstr "Vždy rád slyším od uživatelů Reactive Resume se zpětnou vazbou nebo podporou. Zde jsou některé zprávy, které jsem obdržel. Pokud máte nějakou zpětnou vazbu, neváhejte mi napsat e-mail na <0>{email}</0>."
+msgid "I always love to hear from the users of Resume Lister with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
+msgstr "Vždy rád slyším od uživatelů Resume Lister se zpětnou vazbou nebo podporou. Zde jsou některé zprávy, které jsem obdržel. Pokud máte nějakou zpětnou vazbu, neváhejte mi napsat e-mail na <0>{email}</0>."
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:94
 #: apps/client/src/pages/builder/sidebars/left/sections/custom/section.tsx:53
@@ -1144,24 +1144,24 @@ msgstr "Vyvolat problém"
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/public/page.tsx:73
 #: apps/client/src/pages/public/page.tsx:94
-msgid "Reactive Resume"
+msgid "Resume Lister"
 msgstr "Reaktivní obnovení"
 
 #: apps/client/src/pages/home/sections/logo-cloud/index.tsx:39
-msgid "Reactive Resume has helped people land jobs at these great companies:"
-msgstr "Reactive Resume pomáhal lidem při práci v těchto skvělých společnostech:"
+msgid "Resume Lister has helped people land jobs at these great companies:"
+msgstr "Resume Lister pomáhal lidem při práci v těchto skvělých společnostech:"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:12
-msgid "Reactive Resume is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Reactive Resume through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
-msgstr "Reaktivní Resume je bezplatný a otevřený projekt vytvořený většinou mnou a vaše podpora by byla velmi oceněna. Pokud máte sklon přispět, a pouze pokud si to můžete dovolit, zvažte poskytnutí daru prostřednictvím některé z uvedených platforem. Kromě toho dary pro Reactive Resume prostřednictvím Open Collective jsou osvobozeny od daní, protože projekt je daňově hostován Open Collective Europe."
+msgid "Resume Lister is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Resume Lister through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
+msgstr "Reaktivní Resume je bezplatný a otevřený projekt vytvořený většinou mnou a vaše podpora by byla velmi oceněna. Pokud máte sklon přispět, a pouze pokud si to můžete dovolit, zvažte poskytnutí daru prostřednictvím některé z uvedených platforem. Kromě toho dary pro Resume Lister prostřednictvím Open Collective jsou osvobozeny od daní, protože projekt je daňově hostován Open Collective Europe."
 
 #: apps/client/src/pages/home/sections/features/index.tsx:107
-msgid "Reactive Resume is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
-msgstr "Reactive Resume je vášnivý projekt více než 3 roky tvrdé práce, a s tím přichází řada reiterovaných myšlenek a rysů, které byly postaveny na (near) dokonalosti."
+msgid "Resume Lister is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
+msgstr "Resume Lister je vášnivý projekt více než 3 roky tvrdé práce, a s tím přichází řada reiterovaných myšlenek a rysů, které byly postaveny na (near) dokonalosti."
 
 #: apps/client/src/pages/home/sections/contributors/index.tsx:22
-msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
-msgstr "Reactive Resume vzkvétá díky jeho živé komunitě. Tento projekt vděčí za svůj pokrok mnoha jednotlivcům, kteří věnovali svůj čas a dovednosti. Pod tímto slavíme kodéry, kteří rozšířili své funkce na GitHubu, a lingvisty, jejichž překlady na Crowdin je zpřístupnily širšímu publiku."
+msgid "Resume Lister thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
+msgstr "Resume Lister vzkvétá díky jeho živé komunitě. Tento projekt vděčí za svůj pokrok mnoha jednotlivcům, kteří věnovali svůj čas a dovednosti. Pod tímto slavíme kodéry, kteří rozšířili své funkce na GitHubu, a lingvisty, jejichž překlady na Crowdin je zpřístupnily širšímu publiku."
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:79
 msgid "Redo"
@@ -1421,7 +1421,7 @@ msgid "Support the app by donating what you can!"
 msgstr "Podpořte aplikaci tím, že přispějete, co můžete!"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:9
-msgid "Supporting Reactive Resume"
+msgid "Supporting Resume Lister"
 msgstr "Podpora reaktivního obnovení"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:65
@@ -1580,8 +1580,8 @@ msgid "Update an existing resume"
 msgstr "Aktualizovat existující pokračování"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:214
-msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
-msgstr "Nahrajte soubor z jednoho z přijatých zdrojů pro analyzování existujících dat a import do Reactive Resume pro snadnější úpravy."
+msgid "Upload a file from one of the accepted sources to parse existing data and import it into Resume Lister for easier editing."
+msgstr "Nahrajte soubor z jednoho z přijatých zdrojů pro analyzování existujících dat a import do Resume Lister pro snadnější úpravy."
 
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
 msgid "URL"
@@ -1693,12 +1693,12 @@ msgid "You can track the number of views your resume has received, or how many p
 msgstr "Můžete sledovat počet zobrazení, která jste obnovili, nebo kolik lidí si stáhlo obnovení povolením veřejného sdílení."
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:85
-msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
+msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Resume Lister altogether, you can simply remove the key from your settings."
 msgstr "Máte možnost <0>získat vlastní OpenAI API klíč</0>. Tento klíč vás zmocňuje k pákovému API tak, jak to považujete za vhodné. Alternativně pokud chcete úplně zakázat AI funkce v reaktivním obnovení, můžete jednoduše odstranit klíč z nastavení."
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:50
-msgid "You should have received an email from <0>Reactive Resume</0> with a link to verify your account."
-msgstr "Měli byste obdržet e-mail od <0>Reactive Resume</0> s odkazem na ověření vašeho účtu."
+msgid "You should have received an email from <0>Resume Lister</0> with a link to verify your account."
+msgstr "Měli byste obdržet e-mail od <0>Resume Lister</0> s odkazem na ověření vašeho účtu."
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:49
 #: apps/client/src/pages/auth/forgot-password/page.tsx:54

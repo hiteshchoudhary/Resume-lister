@@ -31,7 +31,7 @@ msgid "{value, plural, one {Column} other {Columns}}"
 msgstr "{value, plural, other {列}}"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:20
-msgid "<0>I built Reactive Resume mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
+msgid "<0>I built Resume Lister mostly by myself during my spare time, with a lot of help from other great open-source contributors.</0><1>If you like the app and want to support keeping it free forever, please donate whatever you can afford to give.</1>"
 msgstr "<0>Reactive Resumeは、素晴らしいオープンソースコントリビューターの助けを借りながら、空き時間に作りました。</0><1>もし、このアプリを気に入り、永久に無料で使い続けたいと思った方は、寄付をお願いします。</1>"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:51
@@ -39,11 +39,11 @@ msgid "<0>I'm sure the app is not perfect, but I'd like for it to be.</0><1>If y
 msgstr "<0>このアプリは完璧ではないと思いますが、完璧にしたいと思っています。</0><1>もし履歴書作成中に問題に直面したり、あなたや他のユーザーがもっと簡単に履歴書を作成できるようなアイデアがあれば、リポジトリにissueを作成するか、私にメールを送ってください。</1>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:205
-msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Reactive Resume bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
+msgid "<0>Note: </0>By utilizing the OpenAI API, you acknowledge and accept the <1>terms of use</1> and <2>privacy policy</2> outlined by OpenAI. Please note that Resume Lister bears no responsibility for any improper or unauthorized utilization of the service, and any resulting repercussions or liabilities solely rest on the user."
 msgstr "<0>注意：</0>OpenAI APIを利用することにより、利用者はOpenAIの<1>利用規約と</1> <2>プライバシーポリシーに</2>同意したものとみなされます。Reactive Resumeは、サービスの不適切な利用や不正利用に対して一切の責任を負わず、その結果生じるいかなる影響や責任も利用者のみにあることにご注意ください。"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:85
-msgid "<0>The community has spent a lot of time writing the documentation for Reactive Resume, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
+msgid "<0>The community has spent a lot of time writing the documentation for Resume Lister, and I'm sure it will help you get started with the app.</0><1>There are also a lot of examples to help you get started, and features that you might not know about which could help you build your perfect resume.</1>"
 msgstr "<0>コミュニティはReactive Resumeのドキュメントを作成することに多くの時間を費やしました。</0><1>また、使い始めるのに役立つ例や、完璧な履歴書を作成するのに役立つあなたが知らないかもしれない機能もたくさんあります。</1>"
 
 #: apps/client/src/pages/dashboard/settings/_sections/security.tsx:146
@@ -56,12 +56,12 @@ msgstr "<0>二要素認証が有効になっています。</0>サインイン�
 
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/home/sections/hero/index.tsx:40
-msgid "A free and open-source resume builder"
+msgid "Build professional resumes in minutes."
 msgstr "無料でオープンソースの履歴書ビルダー"
 
 #: apps/client/src/pages/home/components/footer.tsx:21
 #: apps/client/src/pages/home/sections/hero/index.tsx:45
-msgid "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume."
+msgid "Build professional resumes in minutes. Stand out from the crowd and land your dream job."
 msgstr "履歴書の作成、更新、共有のプロセスを簡素化する、無料でオープンソースの履歴書ビルダー"
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:53
@@ -442,8 +442,8 @@ msgid "Don't see your language? <0>Help translate the app.</0>"
 msgstr "あなたの言語が表示されませんか？<0>アプリの翻訳を手伝ってください。</0>"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/information.tsx:40
-msgid "Donate to Reactive Resume"
-msgstr "Reactive Resume に寄付する"
+msgid "Donate to Resume Lister"
+msgstr "Resume Lister に寄付する"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:56
 msgid "Download a JSON snapshot of your resume. This file can be used to import your resume in the future, or can even be shared with others to collaborate."
@@ -527,12 +527,12 @@ msgid "Errors"
 msgstr "エラー"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:78
-msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Reactive Resume has helped you. Your feedback and support are always welcome and much appreciated!"
+msgid "Even if you're not in a position to contribute financially, you can still make a difference by giving the GitHub repository a star, spreading the word to your friends, or dropping a quick message to let me know how Resume Lister has helped you. Your feedback and support are always welcome and much appreciated!"
 msgstr "たとえ金銭的に貢献する立場にないとしても、GitHubリポジトリにスターを付けることで違いを生み出すことができます。 あなたの友人に言葉を広めるか、またはReactive Resume があなたをどのように役立ったかを私に知らせるためにクイックメッセージを落とす。 あなたのフィードバックとサポートはいつでも歓迎し、非常に感謝しています!"
 
 #: apps/client/src/pages/home/sections/templates/index.tsx:12
-msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
-msgstr "Reactive Resume で利用可能なテンプレートを探索し、作成した履歴書を表示します。 また、次の履歴書の作成をガイドするための例としても役立ちます。"
+msgid "Explore the templates available in Resume Lister and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+msgstr "Resume Lister で利用可能なテンプレートを探索し、作成した履歴書を表示します。 また、次の履歴書の作成をガイドするための例としても役立ちます。"
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:111
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:40
@@ -687,7 +687,7 @@ msgid "Host your resume publicly"
 msgstr "あなたの履歴書を公開してください"
 
 #: apps/client/src/pages/home/sections/testimonials/index.tsx:70
-msgid "I always love to hear from the users of Reactive Resume with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
+msgid "I always love to hear from the users of Resume Lister with feedback or support. Here are some of the messages I've received. If you have any feedback, feel free to drop me an email at <0>{email}</0>."
 msgstr "私はいつもReactive Resume のユーザーからフィードバックやサポートを受けて聞くのが大好きです。 私が受け取ったメッセージの一部をご紹介します。フィードバックがあれば、お気軽に<0>{email}</0>までメールをお送りください。"
 
 #: apps/client/src/pages/builder/sidebars/left/dialogs/profiles.tsx:94
@@ -1144,24 +1144,24 @@ msgstr "課題を上げる"
 #: apps/client/src/pages/home/page.tsx:24
 #: apps/client/src/pages/public/page.tsx:73
 #: apps/client/src/pages/public/page.tsx:94
-msgid "Reactive Resume"
+msgid "Resume Lister"
 msgstr "リアクティブ再開"
 
 #: apps/client/src/pages/home/sections/logo-cloud/index.tsx:39
-msgid "Reactive Resume has helped people land jobs at these great companies:"
-msgstr "Reactive Resume は、これらの偉大な会社で人々の仕事の着陸を支援してきました。"
+msgid "Resume Lister has helped people land jobs at these great companies:"
+msgstr "Resume Lister は、これらの偉大な会社で人々の仕事の着陸を支援してきました。"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:12
-msgid "Reactive Resume is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Reactive Resume through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
-msgstr "Reactive Resume はフリーでオープンソースのプロジェクトで、主に私によって作成されました。サポートに感謝いたします。 あなたが貢献したいと思っていて、あなたができる場合にのみ、上場プラットフォームのいずれかを介して寄付を行うことを検討してください。 また、Open Collectiveを通じてReactive Resumeへの寄付は免税となります。これは、Open Collective Europeが財政的に主催しているためです。"
+msgid "Resume Lister is a free and open-source project crafted mostly by me, and your support would be greatly appreciated. If you're inclined to contribute, and only if you can afford to, consider making a donation through any of the listed platforms. Additionally, donations to Resume Lister through Open Collective are tax-exempt, as the project is fiscally hosted by Open Collective Europe."
+msgstr "Resume Lister はフリーでオープンソースのプロジェクトで、主に私によって作成されました。サポートに感謝いたします。 あなたが貢献したいと思っていて、あなたができる場合にのみ、上場プラットフォームのいずれかを介して寄付を行うことを検討してください。 また、Open Collectiveを通じてReactive Resumeへの寄付は免税となります。これは、Open Collective Europeが財政的に主催しているためです。"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:107
-msgid "Reactive Resume is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
-msgstr "Reactive Resume - Reactive Resume は、3年以上の労力を要する情熱的なプロジェクトです。 そして、それによって(近く)完璧に作られたいくつかの再反復されたアイデアや機能が来る。"
+msgid "Resume Lister is a passion project of over 3 years of hard work, and with that comes a number of re-iterated ideas and features that have been built to (near) perfection."
+msgstr "Resume Lister - Resume Lister は、3年以上の労力を要する情熱的なプロジェクトです。 そして、それによって(近く)完璧に作られたいくつかの再反復されたアイデアや機能が来る。"
 
 #: apps/client/src/pages/home/sections/contributors/index.tsx:22
-msgid "Reactive Resume thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
-msgstr "Reactive Resume は、その活気に満ちたコミュニティのおかげで繁栄します. このプロジェクトは、時間とスキルを捧げた多くの個人にその進歩を負っています. 以下に示す。 GitHubの機能を強化したコーダーとCrowdinの翻訳者がより多くの視聴者にアクセスできるようにしたことを祝福します。"
+msgid "Resume Lister thrives thanks to its vibrant community. This project owes its progress to numerous individuals who've dedicated their time and skills. Below, we celebrate the coders who've enhanced its features on GitHub and the linguists whose translations on Crowdin have made it accessible to a broader audience."
+msgstr "Resume Lister は、その活気に満ちたコミュニティのおかげで繁栄します. このプロジェクトは、時間とスキルを捧げた多くの個人にその進歩を負っています. 以下に示す。 GitHubの機能を強化したコーダーとCrowdinの翻訳者がより多くの視聴者にアクセスできるようにしたことを祝福します。"
 
 #: apps/client/src/pages/builder/_components/toolbar.tsx:79
 msgid "Redo"
@@ -1421,7 +1421,7 @@ msgid "Support the app by donating what you can!"
 msgstr "できることを寄付してアプリをサポートしましょう！"
 
 #: apps/client/src/pages/home/sections/support/index.tsx:9
-msgid "Supporting Reactive Resume"
+msgid "Supporting Resume Lister"
 msgstr "リアクティブレジュームをサポート"
 
 #: apps/client/src/pages/home/sections/features/index.tsx:65
@@ -1580,8 +1580,8 @@ msgid "Update an existing resume"
 msgstr "既存の履歴書を更新"
 
 #: apps/client/src/pages/dashboard/resumes/_dialogs/import.tsx:214
-msgid "Upload a file from one of the accepted sources to parse existing data and import it into Reactive Resume for easier editing."
-msgstr "承認されたソースのいずれかからファイルをアップロードして、既存のデータをパースし、Reactive Resume にインポートして編集を容易にします。"
+msgid "Upload a file from one of the accepted sources to parse existing data and import it into Resume Lister for easier editing."
+msgstr "承認されたソースのいずれかからファイルをアップロードして、既存のデータをパースし、Resume Lister にインポートして編集を容易にします。"
 
 #: apps/client/src/pages/builder/sidebars/right/sections/sharing.tsx:73
 msgid "URL"
@@ -1693,11 +1693,11 @@ msgid "You can track the number of views your resume has received, or how many p
 msgstr "公開共有を有効にすることで、履歴書が受信した閲覧数や履歴書をダウンロードした人数を追跡できます。"
 
 #: apps/client/src/pages/dashboard/settings/_sections/openai.tsx:85
-msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Reactive Resume altogether, you can simply remove the key from your settings."
-msgstr "<0>あなた自身のOpenAI APIキー</0>を取得するオプションがあります。このキーは、あなたが適切にAPIを活用することを可能にします。 Reactive Resume で AI 機能を完全に無効にしたい場合は、設定からキーを削除することもできます。"
+msgid "You have the option to <0>obtain your own OpenAI API key</0>. This key empowers you to leverage the API as you see fit. Alternatively, if you wish to disable the AI features in Resume Lister altogether, you can simply remove the key from your settings."
+msgstr "<0>あなた自身のOpenAI APIキー</0>を取得するオプションがあります。このキーは、あなたが適切にAPIを活用することを可能にします。 Resume Lister で AI 機能を完全に無効にしたい場合は、設定からキーを削除することもできます。"
 
 #: apps/client/src/pages/auth/verify-email/page.tsx:50
-msgid "You should have received an email from <0>Reactive Resume</0> with a link to verify your account."
+msgid "You should have received an email from <0>Resume Lister</0> with a link to verify your account."
 msgstr "あなたのアカウントを確認するためのリンクが記載された <0>リアクティブ再開</0>からメールを受け取っているはずです。"
 
 #: apps/client/src/pages/auth/forgot-password/page.tsx:49
