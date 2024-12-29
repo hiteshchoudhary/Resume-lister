@@ -141,9 +141,9 @@ export const BuilderToolbar = () => {
           </Toggle>
         </Tooltip>
 
-        <Separator orientation="vertical" className="h-9" />
+        {/* <Separator orientation="vertical" className="h-9" /> */}
 
-        <Tooltip content={t`Copy Link to Resume`}>
+        {/* <Tooltip content={t`Copy Link to Resume`}>
           <Button
             size="icon"
             variant="ghost"
@@ -165,7 +165,7 @@ export const BuilderToolbar = () => {
           >
             {loading ? <CircleNotch className="animate-spin" /> : <FilePdf />}
           </Button>
-        </Tooltip>
+        </Tooltip> */}
       </div>
     </motion.div>
   );
