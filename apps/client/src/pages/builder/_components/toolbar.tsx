@@ -2,58 +2,54 @@ import { t } from "@lingui/macro";
 import {
   ArrowClockwise,
   ArrowCounterClockwise,
-  CircleNotch,
   ClockClockwise,
   CubeFocus,
-  FilePdf,
   Hash,
   LineSegment,
-  LinkSimple,
   MagnifyingGlassMinus,
   MagnifyingGlassPlus,
 } from "@phosphor-icons/react";
 import { Button, Separator, Toggle, Tooltip } from "@reactive-resume/ui";
 import { motion } from "framer-motion";
 
-import { useToast } from "@/client/hooks/use-toast";
 import { usePrintResume } from "@/client/services/resume";
 import { useBuilderStore } from "@/client/stores/builder";
 import { useResumeStore, useTemporalResumeStore } from "@/client/stores/resume";
 
-const openInNewTab = (url: string) => {
-  const win = window.open(url, "_blank");
-  if (win) win.focus();
-};
+// const openInNewTab = (url: string) => {
+//   const win = window.open(url, "_blank");
+//   if (win) win.focus();
+// };
 
 export const BuilderToolbar = () => {
-  const { toast } = useToast();
+  // const { toast } = useToast();
   const setValue = useResumeStore((state) => state.setValue);
   const undo = useTemporalResumeStore((state) => state.undo);
   const redo = useTemporalResumeStore((state) => state.redo);
   const frameRef = useBuilderStore((state) => state.frame.ref);
 
-  const id = useResumeStore((state) => state.resume.id);
-  const isPublic = useResumeStore((state) => state.resume.visibility === "public");
+  // const id = useResumeStore((state) => state.resume.id);
+  // const isPublic = useResumeStore((state) => state.resume.visibility === "public");
   const pageOptions = useResumeStore((state) => state.resume.data.metadata.page.options);
 
-  const { printResume, loading } = usePrintResume();
+  // const { printResume, loading } = usePrintResume();
 
-  const onPrint = async () => {
-    const { url } = await printResume({ id });
+  // const onPrint = async () => {
+  //   const { url } = await printResume({ id });
 
-    openInNewTab(url);
-  };
+  //   openInNewTab(url);
+  // };
 
-  const onCopy = async () => {
-    const { url } = await printResume({ id });
-    await navigator.clipboard.writeText(url);
+  // const onCopy = async () => {
+  //   const { url } = await printResume({ id });
+  //   await navigator.clipboard.writeText(url);
 
-    toast({
-      variant: "success",
-      title: t`A link has been copied to your clipboard.`,
-      description: t`Anyone with this link can view and download the resume. Share it on your profile or with recruiters.`,
-    });
-  };
+  //   toast({
+  //     variant: "success",
+  //     title: t`A link has been copied to your clipboard.`,
+  //     description: t`Anyone with this link can view and download the resume. Share it on your profile or with recruiters.`,
+  //   });
+  // };
 
   const onZoomIn = () => frameRef?.contentWindow?.postMessage({ type: "ZOOM_IN" }, "*");
   const onZoomOut = () => frameRef?.contentWindow?.postMessage({ type: "ZOOM_OUT" }, "*");
